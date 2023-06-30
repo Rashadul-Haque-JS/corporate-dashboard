@@ -1,0 +1,14 @@
+{
+    "productionRate": 1000,
+    "inventoryLevel": 500,
+    "supplyChainMetrics": {
+      "onTimeDelivery": 0.9,
+      "orderAccuracy": 0.95
+    },
+    "serviceResponseTime": "2 hours",
+    "qualityControl": {
+      "defectRate": 0.05,
+      "rejectionRate": 0.02
+    }
+  }
+  

@@ -1,0 +1,23 @@
+[
+    {
+      "category": "Electronics",
+      "sales": 500
+    },
+    {
+      "category": "Clothing",
+      "sales": 300
+    },
+    {
+      "category": "Home Decor",
+      "sales": 200
+    },
+    {
+      "category": "Books",
+      "sales": 150
+    },
+    {
+      "category": "Beauty",
+      "sales": 100
+    }
+  ]
+  

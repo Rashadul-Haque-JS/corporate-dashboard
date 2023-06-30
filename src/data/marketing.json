@@ -1,0 +1,8 @@
+{
+    "conversionRate": 0.1,
+    "clickThroughRate": 0.05,
+    "costPerAcquisition": 50,
+    "customerAcquisitionCost": 100,
+    "returnOnAdvertisingSpend": 2.5
+  }
+  
