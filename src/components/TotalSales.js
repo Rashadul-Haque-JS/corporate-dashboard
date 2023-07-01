@@ -68,10 +68,10 @@ const TotalSales = () => {
             dy={8}
             textAnchor="middle"
             dominantBaseline="middle"
-            className="text-3xl font-bold"
+            className="text-4xl font-bold"
           >
             {formattedTotalSalesAmount}
-            <tspan x="50%" y="42%" dy={24} className="block font-extrabold">
+            <tspan x="50%" y="44%" dy={24} className="block font-extrabold">
               M
             </tspan>
           </text>
