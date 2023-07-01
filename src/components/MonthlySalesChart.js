@@ -23,15 +23,17 @@ const MonthlySalesChart = () => {
   return (
     <div className="py-3 rounded-lg w-full">
       <h2 className="text-center mb-4">Monthly Sales</h2>
-      <div className="overflow-x-auto w-full flex justify-center items-center">
-        <BarChart width={640} height={300} data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="month" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="sales" fill="#36A2EB" />
-        </BarChart>
+      <div className="overflow-x-auto w-full">
+        <div className="flex justify-center items-center sm:block" style={{ width: "100%", overflowX: "scroll" }}>
+          <BarChart width={640} height={300} data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="month" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="sales" fill="#36A2EB" />
+          </BarChart>
+        </div>
       </div>
     </div>
   );
