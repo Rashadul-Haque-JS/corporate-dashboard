@@ -8,9 +8,9 @@ import Watch from "./components/Watch";
 
 const Dashboard = () => {
   return (
-    <div className="w-full flex justify-center items-center sm:mx-8 bg-gray-100 sm:pb-10">
+    <div className="w-full flex justify-center items-center sm:mx-8 bg-gray-100 sm:pb-8 relative">
       <div className="flex flex-col justify-start items-center w-full min-h-screen sm:w-[96%] sm:h-auto mt-2 gap-6">
-        <div className="mt-8">
+        <div className="mt-4">
           <h1 className="text-center text-xl font-bold uppercase mb-2 text-black">
           StatCraft Labs 
           </h1>
@@ -39,6 +39,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <small style={{position:'absolute', bottom:'14px', right:'20px', fontSize:'8px', fontWeight:'bold'}}>@Rashadul H</small>
     </div>
   );
 };

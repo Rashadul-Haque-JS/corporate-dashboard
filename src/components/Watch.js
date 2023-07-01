@@ -35,9 +35,13 @@ const DigitalWatch = () => {
   };
 
   return (
-    <div className="flex justify-center items-center gap-8 text-[#ff0000] font-bold">
-      <div className="font-lg">{formatDate(dateTime)}</div>
-      <div className="font-lg ">{formatTime(dateTime)}</div>
+    <div className="flex justify-center items-center gap-4 text-[#ff0000] font-bold">
+      <div className="font-lg text-center flex-shrink-0 w-[180px]">
+        {formatDate(dateTime)}
+      </div>
+      <div className="font-lg text-center flex-shrink-0 w-[50px]">
+        {formatTime(dateTime)}
+      </div>
     </div>
   );
 };

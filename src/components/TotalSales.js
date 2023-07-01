@@ -1,10 +1,10 @@
 import React from "react";
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
 const data = [
   {
     category: "Electronics",
-    sales: 500
+    sales: 600
   },
   {
     category: "Clothing",
@@ -12,7 +12,7 @@ const data = [
   },
   {
     category: "Home Decor",
-    sales: 200
+    sales: 400
   },
   {
     category: "Books",
@@ -28,13 +28,13 @@ const colorPalette = ["#FF6384", "#36A2EB", "#FFCE56", "#8A3FFC", "#FF9800"];
 
 const TotalSales = () => {
   const totalSalesAmount = data.reduce((total, product) => total + product.sales, 0);
-  const formattedTotalSalesAmount = (totalSalesAmount / 1000).toFixed(2);
+  const formattedTotalSalesAmount = (totalSalesAmount / 100).toFixed(2);
 
   return (
     <div className="py-3 rounded-lg w-full">
-      <h2 className="text-center">Total Sales {new Date().getFullYear()}</h2>
-      <div className="flex items-center justify-center gap-10 relative">
-        <PieChart width={380} height={260}>
+      <h2 className="text-center">Total Sales</h2>
+      <div className="flex justify-center items-center gap-10 relative">
+        <PieChart width={380} height={300}>
           <Pie
             data={data}
             dataKey="sales"
@@ -50,16 +50,28 @@ const TotalSales = () => {
             ))}
           </Pie>
           <Tooltip formatter={(value) => `${value} Million`} />
+          <Legend
+            align="center"
+            verticalAlign="bottom"
+            iconType="circle"
+            payload={data.map((entry) => ({
+              value: entry.category,
+              type: "circle",
+              color: colorPalette[data.indexOf(entry) % colorPalette.length]
+            }))}
+            formatter={(value) => value}
+            wrapperStyle={{ marginTop: '10px', fontSize: '12px' }}
+          />
           <text
             x="50%"
-            y="45%"
+            y="38%"
             dy={8}
             textAnchor="middle"
             dominantBaseline="middle"
             className="text-3xl font-bold"
           >
             {formattedTotalSalesAmount}
-            <tspan x="50%" y='50%' dy={24} className="block font-extrabold">
+            <tspan x="50%" y="42%" dy={24} className="block font-extrabold">
               M
             </tspan>
           </text>
