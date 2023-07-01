@@ -32,9 +32,9 @@ const TotalSales = () => {
 
   return (
     <div className="py-3 rounded-lg w-full">
-      <h2 className="text-center">Total Sales</h2>
+      <h2 className="text-center">Total Sales {new Date().getFullYear()}</h2>
       <div className="flex items-center justify-center gap-10 relative">
-        <PieChart width={300} height={300}>
+        <PieChart width={380} height={260}>
           <Pie
             data={data}
             dataKey="sales"
