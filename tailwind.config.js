@@ -3,7 +3,11 @@ module.exports = {
     mode: "jit",
     purge: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          sans: ["Montserrat", "sans-serif"],
+        },
+      },
       screens: {
         sm: { max: "767px" },
         md: { min: "768px", max: "1023px" },

@@ -59,8 +59,8 @@ const TotalSales = () => {
             className="text-3xl font-bold"
           >
             {formattedTotalSalesAmount}
-            <tspan x="50%" y='50%' dy={24} className="block ">
-              Million
+            <tspan x="50%" y='50%' dy={24} className="block font-extrabold">
+              M
             </tspan>
           </text>
         </PieChart>
