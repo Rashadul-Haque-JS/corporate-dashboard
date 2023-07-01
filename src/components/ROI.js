@@ -50,7 +50,7 @@ const FinancialData = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div className="w-full">
-        <ResponsiveContainer width="100%" height={200}>
+        <ResponsiveContainer width="100%" height={220}>
           <PieChart>
             <Pie
               data={data}
@@ -71,7 +71,7 @@ const FinancialData = () => {
               ))}
             </Pie>
             <Tooltip />
-            <Legend content={renderLegend} />
+            <Legend content={renderLegend} style={{ padding: '0px 8px' }}/>
           </PieChart>
         </ResponsiveContainer>
       </div>

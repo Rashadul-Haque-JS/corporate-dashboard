@@ -21,10 +21,10 @@ const MarketingMetrics = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div className="w-[100%]">
-        <ResponsiveContainer width="100%" height={200}>
+        <ResponsiveContainer width="100%" height={220}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="name" style={{ fontSize: '12px' }}/>
             <YAxis />
             <Tooltip />
             <Legend />

@@ -37,3 +37,7 @@ html, body {
 .digital-watch__time {
   font-size: 28px;
 }
+
+.recharts-legend-wrapper{
+  padding: 0 8px !important;
+}

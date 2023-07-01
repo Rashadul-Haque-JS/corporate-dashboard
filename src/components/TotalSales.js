@@ -71,7 +71,12 @@ const TotalSales = () => {
             className="text-4xl font-bold"
           >
             {formattedTotalSalesAmount}
-            <tspan x="50%" y="44%" dy={24} className="block font-extrabold">
+            <tspan
+              x="50%"
+              y={window.innerWidth < 767 ? "46%" : "44%"}
+              dy={24}
+              className="block font-extrabold"
+            >
               M
             </tspan>
           </text>
