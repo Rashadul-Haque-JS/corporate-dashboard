@@ -12,7 +12,7 @@ const Dashboard = () => {
       <div className="flex flex-col justify-start items-center w-full min-h-screen sm:w-[96%] sm:h-auto mt-2 gap-6">
         <div className="mt-8">
           <h1 className="text-center text-xl font-bold uppercase mb-2 text-black">
-            XYZ Company
+          StatCraft Labs 
           </h1>
           <Watch />
         </div>
